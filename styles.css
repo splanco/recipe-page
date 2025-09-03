@@ -55,7 +55,8 @@ h2 {
 .card {
     width: min(100%, 46rem);
     background-color: var(--white);
-    padding: 2rem;
+    padding: clamp(1.5rem, 2rem, 3rem);
+    margin: 8rem 0;
 }
 
 .recipe-image {
