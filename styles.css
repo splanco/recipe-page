@@ -29,7 +29,8 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: var(--stone-100);
+    color: var(--stone-600);
+    background-color: var(--stone-150);
     font-family: 'Outfit', sans-serif;
     margin: 0;
 }
@@ -63,6 +64,19 @@ h2 {
 .recipe-image {
     width: 100%;
     border-radius: 0.75rem;
+}
+
+.prep-time {
+    width: fit-content;
+    padding: 1rem;
+    background-color: var(--rose-50);
+    border-radius: 0.5rem;
+}
+
+.prep-time-title {
+    color: var(--rose-800);
+    font-family: 'Outfit';
+    font-size: 1.25rem;
 }
 
 @media screen and (max-width: 450px) {
