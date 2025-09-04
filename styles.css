@@ -53,12 +53,32 @@ h2 {
 }
 
 .card {
-    width: min(100%, 46rem);
+    width: min(90%, 46rem);
     background-color: var(--white);
     padding: clamp(1.5rem, 2rem, 3rem);
     margin: 8rem 0;
+    border-radius: 1.25rem;
 }
 
 .recipe-image {
     width: 100%;
+    border-radius: 0.75rem;
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        margin-block-start: calc(clamp(1.5rem, 2rem, 3rem) * 2);
+    }
+
+    .card {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .recipe-image {
+        width: calc(100% + (clamp(1.5rem, 2rem, 3rem) * 2));
+        border-radius: 0;
+        margin: calc(clamp(1.5rem, 2rem, 3rem) * -1);
+    }
 }
