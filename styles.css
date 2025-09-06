@@ -97,6 +97,16 @@ ul li::before {
     color: var(--rose-800);
 }
 
+.ingredients-list-item::before {
+    color: var(--brown-800);
+}
+
+.divider {
+    height: 0.1rem;
+    background-color: var(--stone-150);
+    border: none;
+}
+
 @media screen and (max-width: 450px) {
     h1 {
         margin-block-start: calc(clamp(1.5rem, 2rem, 3rem) * 2);
