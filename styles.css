@@ -102,7 +102,7 @@ ul li::before {
 }
 
 .divider {
-    height: 0.1rem;
+    height: 0.1%;
     background-color: var(--stone-150);
     border: none;
 }
