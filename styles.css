@@ -107,6 +107,10 @@ ul li::before {
     border: none;
 }
 
+.instructions-list-item::marker {
+    color: var(--brown-800);
+}
+
 @media screen and (max-width: 450px) {
     h1 {
         margin-block-start: calc(clamp(1.5rem, 2rem, 3rem) * 2);
