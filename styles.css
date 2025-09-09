@@ -60,7 +60,26 @@ ul {
 
 ul li::before {
     content: "\2022";
-    margin-right: clamp(0.75rem, 3%, 1.5rem);
+    margin-inline-end: clamp(0.75rem, 3%, 1.5rem);
+}
+
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol li {
+    counter-increment: step-counter;
+    display: flex;
+}
+
+ol li::before {
+    content: counter(step-counter) ".";
+    color: var(--brown-800);
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    margin-inline-end: clamp(0.75rem, 3%, 1.5rem);
 }
 
 .card {
@@ -105,10 +124,6 @@ ul li::before {
     height: min(0.1%, 1px);
     background-color: var(--stone-150);
     border: none;
-}
-
-.instructions-list-item::marker {
-    color: var(--brown-800);
 }
 
 @media screen and (max-width: 450px) {
