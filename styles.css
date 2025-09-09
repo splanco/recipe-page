@@ -126,6 +126,24 @@ ol li::before {
     border: none;
 }
 
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-table td {
+    padding: 0.75rem;
+}
+
+.nutrition-table-amount {
+    color: var(--brown-800);
+    font-weight: 700;
+}
+
+.bordered-row {
+    border-bottom: 1px solid var(--stone-150);
+}
+
 @media screen and (max-width: 450px) {
     h1 {
         margin-block-start: calc(clamp(1.5rem, 2rem, 3rem) * 2);
